@@ -1,16 +1,16 @@
 "use client";
 
-import { useRouter } from "next/navigation";
-import { twMerge } from "tailwind-merge";
-import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
-import { HiHome } from "react-icons/hi";
-import { BiSearch } from "react-icons/bi";
-import Button from "./Button";
 import useAuthModal from "@/hooks/useAuthModal";
-import { useSupabaseClient } from "@supabase/auth-helpers-react";
 import { useUser } from "@/hooks/useUser";
-import { FaUserAlt } from "react-icons/fa";
+import { useSupabaseClient } from "@supabase/auth-helpers-react";
+import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
+import { BiSearch } from "react-icons/bi";
+import { FaUserAlt } from "react-icons/fa";
+import { HiHome } from "react-icons/hi";
+import { RxCaretLeft, RxCaretRight } from "react-icons/rx";
+import { twMerge } from "tailwind-merge";
+import Button from "./Button";
 
 interface Props {
   children: React.ReactNode;
