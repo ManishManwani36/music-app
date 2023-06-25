@@ -9,6 +9,8 @@ interface Props {
   };
 }
 
+export const revalidate = 0;
+
 export default async function Search({ searchParams }: Props) {
   const songs = await getSongsByTitle(searchParams.title);
   return (
